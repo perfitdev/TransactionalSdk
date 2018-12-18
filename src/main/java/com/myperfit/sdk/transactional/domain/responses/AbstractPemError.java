@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.perfit.sdk.transactional.domain.responses;
+package com.myperfit.sdk.transactional.domain.responses;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.perfit.sdk.transactional.annotations.ImmutableStyle;
+import com.myperfit.sdk.transactional.annotations.ImmutableStyle;
 import org.immutables.value.Value;
 
 import java.util.Map;

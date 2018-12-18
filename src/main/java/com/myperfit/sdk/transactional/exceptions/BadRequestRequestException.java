@@ -1,4 +1,4 @@
-package com.perfit.sdk.transactional.exceptions;
+package com.myperfit.sdk.transactional.exceptions;
 
 public class BadRequestRequestException extends RequestFailedException {
     public BadRequestRequestException(String responseApi) {

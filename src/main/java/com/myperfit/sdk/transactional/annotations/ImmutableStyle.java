@@ -1,4 +1,4 @@
-package com.perfit.sdk.transactional.annotations;
+package com.myperfit.sdk.transactional.annotations;
 
 import org.immutables.value.Value;
 

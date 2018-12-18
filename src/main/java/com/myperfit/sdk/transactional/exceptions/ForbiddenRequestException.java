@@ -1,4 +1,4 @@
-package com.perfit.sdk.transactional.exceptions;
+package com.myperfit.sdk.transactional.exceptions;
 
 public class ForbiddenRequestException extends RequestFailedException {
     public ForbiddenRequestException(String responseApi) {

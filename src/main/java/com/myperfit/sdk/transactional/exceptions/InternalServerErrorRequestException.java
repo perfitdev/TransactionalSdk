@@ -1,4 +1,4 @@
-package com.perfit.sdk.transactional.exceptions;
+package com.myperfit.sdk.transactional.exceptions;
 
 public class InternalServerErrorRequestException extends RequestFailedException {
     public InternalServerErrorRequestException(String responseApi) {

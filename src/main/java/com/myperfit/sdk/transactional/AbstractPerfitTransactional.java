@@ -1,13 +1,14 @@
-package com.perfit.sdk.transactional;
+package com.myperfit.sdk.transactional;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.perfit.sdk.transactional.annotations.ImmutableStyle;
-import com.perfit.sdk.transactional.domain.SendMailRequest;
-import com.perfit.sdk.transactional.domain.responses.PemResponse;
+import com.myperfit.sdk.transactional.exceptions.*;
+import com.myperfit.sdk.transactional.annotations.ImmutableStyle;
+import com.myperfit.sdk.transactional.domain.SendMailRequest;
+import com.myperfit.sdk.transactional.domain.responses.PemResponse;
 import com.perfit.sdk.transactional.exceptions.*;
 import org.immutables.value.Value;
 import org.json.simple.JSONObject;

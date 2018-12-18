@@ -1,11 +1,11 @@
-package com.perfit.sdk.transactional.domain;
+package com.myperfit.sdk.transactional.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.perfit.sdk.transactional.annotations.ImmutableStyle;
-import com.perfit.sdk.transactional.domain.tracking.TrackingClickRequest;
-import com.perfit.sdk.transactional.domain.tracking.TrackingGAnalyticsRequest;
-import com.perfit.sdk.transactional.domain.tracking.TrackingOpenRequest;
+import com.myperfit.sdk.transactional.annotations.ImmutableStyle;
+import com.myperfit.sdk.transactional.domain.tracking.TrackingClickRequest;
+import com.myperfit.sdk.transactional.domain.tracking.TrackingGAnalyticsRequest;
+import com.myperfit.sdk.transactional.domain.tracking.TrackingOpenRequest;
 import org.immutables.value.Value;
 
 import javax.annotation.Nullable;
