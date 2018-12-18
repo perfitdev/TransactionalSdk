@@ -5,6 +5,33 @@
     <artifactId>transactionalsdk</artifactId>
     <version>1.1.2-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <name>transactionalsdk</name>
+    <url>https://github.com/perfitdev/TransactionalSdk</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>kevin</id>
+            <name>Kevin Fuksman</name>
+            <email>kfuksman@perfit.com.ar</email>
+            <organization>Perfit</organization>
+            <organizationUrl>https://www.myperfit.com/</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>-3</timezone>
+        </developer>
+    </developers>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
