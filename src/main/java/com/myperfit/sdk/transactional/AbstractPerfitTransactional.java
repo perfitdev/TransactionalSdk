@@ -6,6 +6,7 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.myperfit.sdk.transactional.annotations.ImmutableStyle;
+import com.myperfit.sdk.transactional.config.ObjectMapperConfig;
 import com.myperfit.sdk.transactional.domain.SendMailRequest;
 import com.myperfit.sdk.transactional.domain.responses.PemResponse;
 import com.myperfit.sdk.transactional.exceptions.*;
@@ -27,7 +28,9 @@ public abstract class AbstractPerfitTransactional {
 
     @Value.Default
     public ObjectMapper mapper() {
-        return new ObjectMapper();
+        ObjectMapper objectMapper = new ObjectMapper();
+        new ObjectMapperConfig().registerModules(objectMapper);
+        return objectMapper;
     }
 
     @Value.Default
@@ -48,16 +51,11 @@ public abstract class AbstractPerfitTransactional {
             return PemResponse.builder()
                     .body(body)
                     .build();
-        } catch (JsonProcessingException e) {
-            // TODO: ver que tiro
-        } catch (UnirestException e) {
-            e.printStackTrace();
+        } catch (JsonProcessingException | UnirestException | ParseException e) {
+            throw new RequestFailedException("");
         } catch (RequestFailedException e) {
             throw e;
-        } catch (ParseException e) {
-            e.printStackTrace();
         }
-        return null;
     }
 
 
