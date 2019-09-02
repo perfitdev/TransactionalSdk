@@ -7,6 +7,7 @@ import com.myperfit.sdk.transactional.annotations.ImmutableStyle;
 import org.immutables.value.Value;
 
 import javax.annotation.Nullable;
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 
@@ -48,5 +49,9 @@ public abstract class AbstractSendMailRequest {
 
     @Nullable
     public abstract MailSubscriptionRequest subscription();
+
+    @Nullable
+    @JsonProperty("launch_date")
+    public abstract Instant launchDate();
 
 }
