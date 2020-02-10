@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.myperfit.sdk.transactional</groupId>
     <artifactId>transactionalsdk</artifactId>
-    <version>1.1.6</version>
+    <version>1.1.7-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>transactionalsdk</name>
     <url>https://github.com/perfitdev/TransactionalSdk</url>
@@ -243,6 +243,6 @@
         <connection>scm:git:git://github.com/perfitdev/TransactionalSdk.git</connection>
         <developerConnection>scm:git:git@github.com:perfitdev/TransactionalSdk.git</developerConnection>
         <url>https://github.com/perfitdev/TransactionalSdk.git</url>
-        <tag>transactionalsdk-1.1.6</tag>
+        <tag>transactionalsdk-1.1.1</tag>
     </scm>
 </project>
