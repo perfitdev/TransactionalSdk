@@ -54,4 +54,8 @@ public abstract class AbstractSendMailRequest {
     @JsonProperty("launch_date")
     public abstract Instant launchDate();
 
+    @Nullable
+    @JsonProperty("template_id")
+    public abstract  String templateId();
+
 }
